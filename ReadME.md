@@ -8,18 +8,25 @@ This project is a Django REST API for CRUD operations of student details where t
 
 ## Installation
 1. Clone the repository
-2. Install the dependencies by running pip install -r requirements.txt
-3. Run the server using py manage.py runserver
+1. Create virtual environment using `python -m venv env`
+1. Activate the virtual environment using `source env/Scripts/activate`
+1. Install the dependencies by running `pip install -r requirements.txt`
+1. Make migrations using `python manage.py makemigrations`
+1. Migrate files using `python manage.py migrate` 
+1. Run the server using `python manage.py runserver 8025`
 
 ## APIs using Django Rest Framework for CRUD operations.
 The API provides the following endpoints:
 
 1. http://127.0.0.1:8025/api/get/ : Retrives all the student details
 ![Alt text](images/image-3.png)
+
 2. http://127.0.0.1:8025/api/post/ : Creates a new student record
 ![Alt text](images/image-2.png)
+
 3. http://127.0.0.1:8025/api/update/id: Updates the student record of given id
 ![Alt text](images/image-1.png)
+
 4. http://127.0.0.1:8025/api/delete/id: Delete the student record of given id 
 ![Alt text](images/image.png)
 
